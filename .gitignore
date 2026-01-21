@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+allure-results/
+allure-report/
+test-results/
+playwright-report/
+blob-report/
+test-results/
+
+# Reports & artifacts you generated
+report.html
+test.html
+allure-results/
+assets/               # ← only if you don't want the css uploaded (most people keep it)
+
+# Virtual environments & IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+*.tmp
