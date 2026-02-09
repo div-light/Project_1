@@ -1,5 +1,6 @@
 from pages.productPage import ProductPage
 from playwright.sync_api import Page
+import time
 
 
 class CheckoutPage(ProductPage):
@@ -24,7 +25,8 @@ class CheckoutPage(ProductPage):
         self.finish_button.click()
     
     def verify_checkout_info(self):
-        return self.page.screenshot(path="screenshots/checkout_info.png")
+        filename = f"screenshots/checkout_info_{int(time.time())}.png"
+        return self.page.screenshot(path=filename)
     
     
     
